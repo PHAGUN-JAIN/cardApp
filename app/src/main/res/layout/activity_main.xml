@@ -40,16 +40,17 @@
     <View
         android:id="@+id/divider"
         android:layout_width="418dp"
-        android:layout_height="7dp"
+        android:layout_height="0dp"
         android:layout_marginStart="1dp"
+        android:layout_marginTop="291dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginBottom="176dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintBottom_toTopOf="@+id/show"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
@@ -71,15 +72,24 @@
         android:id="@+id/show"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="38dp"
+        android:onClick="ShowContact"
         android:text="show contact details"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="474dp" />
+        app:layout_constraintBottom_toTopOf="@+id/showDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
 
     <TextView
         android:id="@+id/showDetail"
-        android:layout_width="176dp"
-        android:layout_height="36dp"
+        android:layout_width="186dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="135dp"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="560dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/show"
+        app:layout_constraintStart_toStartOf="@+id/show"
+        app:layout_constraintTop_toBottomOf="@+id/show" />
 </androidx.constraintlayout.widget.ConstraintLayout>
