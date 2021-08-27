@@ -17,11 +17,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun ShowContact(view:View){
+    fun showContact(view:View){
         show = findViewById(R.id.show)
         showDetail = findViewById(R.id.showDetail)
 
-        var detail = "example.gmail.com"
-        showDetail.setText(detail)
+        val detail = "example.gmail.com"
+        if(showDetail.text.length=== 0){
+            showDetail.setText(detail)
+        }else{
+            showDetail.setText("")
+        }
     }
 }

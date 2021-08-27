@@ -3,4 +3,7 @@
     <string name="jainsaheb">Jainsaheb</string>
     <string name="student_btech">STUDENT, BTech</string>
     <string name="todo">TODO</string>
+    <string name="show_contact_details">show contact details</string>
+    <string name="pursuing_btech_cse">Pursuing BTech CSE</string>
+    <string name="noob_kotlin_app_devliopeer">Noob Kotlin App Devliopeer</string>
 </resources>
